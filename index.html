@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>An Evening With Words — Powell's Corner Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body></body>
+  <nav class="navbar">
+    <a href="#" class="logo">Powell's Corner</a>
+    <span class="tagline">Portland's Independent Bookstore Since 1978</span>
+  </nav>
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <p class="hero-heading">One Night Only · July 19, 2025</p>
+      <h1>An Evening<br/>With <em>Words</em></h1>
+      <p class="hero-subtitle">Portland's most intimate author reading series returns —two voices, one unforgettable night </p>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="countdown-unit">
+          <span class="cd-num" id="cd-days">00</span>
+          <span class="cd-label">Days</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="countdown-unit">
+          <span class="cd-num" id="cd-hours">00</span>
+          <span class="cd-label">Hours</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="countdown-unit">
+          <span class="cd-num" id="cd-mins">00</span>
+          <span class="cd-label">Mins</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="countdown-unit">
+          <span class="cd-num" id="cd-secs">00</span>
+          <span class="cd-label">Secs</span>
+        </div>
+      </div>
+      <button class="btn-primary" id="btn" aria-label="Reserve your seat at the event">
+        Reserve Your Seat
+      </button>
+
+      <div class="hero-details">
+        <span>Powell's Corner Bookstore</span>
+        <span>7:00 PM – 9:30 PM</span>
+        <span>Free Entry</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Featured Authors</h2>
+      <p>Four extraordinary voices sharing stories that linger long after the last page.</p>
+    </div>
+
+    <section class="authors-section" aria-label="Featured Authors">
+      <div class="authors-grid">
+
+        <article class="author-card">
+          <div class="author-photo-wrap">
+            <img class="author-photo" src="./assets/images/maya chen.jpg" alt="Portrait of Maya Chen" loading="lazy" />
+          </div>
+          <p class="author-tag">Fiction · 7:10 PM</p>
+          <h3>Maya Chen</h3>
+          <p class="author-book">"The Weight of Forgotten Seasons" (2024)</p>
+          <p class="author-bio-short">
+            Maya Chen's debut novel has been called "a lantern held up to the fog of grief."
+            A former librarian from Portland, she writes about immigrant families, memory,
+            and the quiet courage it takes to begin again.
+          </p>
+          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-1">
+            Read More ▾
+          </button>
+          <p class="author-bio-full" id="bio-1" hidden>
+            Winner of the Pacific Northwest Book Award, Maya will read from her bestselling
+            debut and answer audience questions. Her work has been translated into 14 languages
+            and praised by The New York Times as "essential reading for our times."
+          </p>
+        </article>
+
+        <article class="author-card">
+          <div class="author-photo-wrap">
+            <img class="author-photo" src="./assets/images/james okafor.jpg" alt="Portrait of James Okafor" loading="lazy" />
+          </div>
+          <p class="author-tag">Poetry & Essays · 8:15 PM</p>
+          <h3>James Okafor</h3>
+          <p class="author-book">"Letters to a City I Never Left" (2023)</p>
+          <p class="author-bio-short">
+            James Okafor writes with the precise tenderness of someone who has learned
+            to love a place by almost losing it. His essays on Black urban life in America
+            have appeared in The Atlantic and Orion Magazine.
+          </p>
+          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-2">
+            Read More ▾
+          </button>
+          <p class="author-bio-full" id="bio-2" hidden>
+            His reading will include unpublished poems from his forthcoming collection
+            due in fall 2025. James has been awarded the Oregon Book Award and is a
+            two-time finalist for the National Book Critics Circle Award.
+          </p>
+        </article>
+
+        <article class="author-card">
+          <div class="author-photo-wrap">
+            <img class="author-photo" src="./assets/images/jane austen 1.jpg" alt="Portrait of Jane Austen" loading="lazy" />
+          </div>
+          <p class="author-tag">Classic Romance · 8:20 PM</p>
+          <h3>Jane Austen</h3>
+          <p class="author-book">"Pride and Prejudice" (1813)</p>
+          <p class="author-bio-short">
+            Renowned for her witty portrayal of 19th-century English society, Jane Austen's
+            novels remain as sharp and relevant as ever. Her keen observations on class,
+            marriage, and morality made her one of the most beloved writers in the English language.
+          </p>
+          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-3">
+            Read More ▾
+          </button>
+          <p class="author-bio-full" id="bio-3" hidden>
+            A special dramatic reading of Pride and Prejudice will open this session,
+            performed by members of the Portland Literary Theatre. This tribute evening
+            celebrates Austen's enduring legacy and her revolutionary voice in fiction.
+          </p>
+        </article>
+
+        <article class="author-card">
+          <div class="author-photo-wrap">
+            <img class="author-photo" src="./assets/images/pauko coelho.jpg" alt="Portrait of Paulo Coelho" loading="lazy" />
+          </div>
+          <p class="author-tag">Inspirational Fiction · 9:00 PM</p>
+          <h3>Paulo Coelho</h3>
+          <p class="author-book">"The Alchemist" (1988)</p>
+          <p class="author-bio-short">
+            Author of The Alchemist — one of the best-selling books in history — Coelho
+            writes deeply spiritual and motivational stories about life, destiny, and purpose.
+          </p>
+          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-4">
+            Read More ▾
+          </button>
+          <p class="author-bio-full" id="bio-4" hidden>
+            His closing reading will be followed by a book-signing session for the first
+            30 attendees. Coelho's works have been translated into 88 languages and sold
+            over 320 million copies worldwide, making him one of the most widely read
+            authors of all time.
+          </p>
+        </article>
+
+      </div>
+    </section>
+    <section class="schedule-section" aria-label="Event Schedule">
+      <div class="section-header">
+        <h2>Engagement Schedule</h2>
+        <p>A carefully curated evening from start to finish.</p>
+      </div>
+      <ul class="schedule-list" role="list">
+        <li class="schedule-item">
+          <span class="schedule-time">7:00 PM</span>
+          <span class="schedule-desc">Doors Open & Welcome Reception</span>
+        </li>
+        <li class="schedule-item">
+          <span class="schedule-time">7:10 PM</span>
+          <span class="schedule-desc">Maya Chen — Fiction Reading</span>
+        </li>
+        <li class="schedule-item">
+          <span class="schedule-time">7:50 PM</span>
+          <span class="schedule-desc">George R.R. Martin — Q&A Session</span>
+        </li>
+        <li class="schedule-item">
+          <span class="schedule-time">8:20 PM</span>
+          <span class="schedule-desc">Jane Austen Tribute — Dramatic Reading</span>
+        </li>
+        <li class="schedule-item">
+          <span class="schedule-time">9:00 PM</span>
+          <span class="schedule-desc">Paulo Coelho — Closing Reading & Book Signing</span>
+        </li>
+        <li class="schedule-item">
+          <span class="schedule-time">9:30 PM</span>
+          <span class="schedule-desc">Networking & Refreshments</span>
+        </li>
+      </ul>
+    </section>
+    <section class="rsvp-section" id="rsvp-section" aria-label="RSVP and Event Details">
+
+      <div class="rsvp-grid">
+        <div class="rsvp-form-wrap">
+          <h2>Reserve Your Seat</h2>
+          <p class="rsvp-sub">Fill in your details and we'll confirm your spot.</p>
+
+          <form id="rsvp-form" method="POST" action="https://httpbin.org/post" novalidate>
+            <div class="form-group">
+              <label for="rsvp-name">Full Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="rsvp-name"
+                name="name"
+                placeholder="Your Full Name"
+                required
+                autocomplete="name"
+              />
+              <span class="error-msg" id="name-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="rsvp-email">Email Address <span class="required">*</span></label>
+              <input
+                type="email"
+                id="rsvp-email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+              <span class="error-msg" id="email-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="rsvp-affiliation">Organization <span class="optional">(Optional)</span></label>
+              <input
+                type="text"
+                id="rsvp-affiliation"
+                name="affiliation"
+                placeholder="Your Organization / Affiliation"
+                autocomplete="organization"
+              />
+            </div>
+
+            <button type="submit" class="btn-primary btn-full">
+              Confirm Your Attendance
+            </button>
+          </form>
+        </div>
+        <div class="venue-wrap">
+          <h2>Venue & Logistics</h2>
+          <h3 class="venue-name">Powell's Corner Bookstore</h3>
+          <p class="venue-address">1847 NW 23rd Ave, Portland, OR 97210</p>
+          <a
+            href="https://maps.google.com/?q=1847+NW+23rd+Ave+Portland+OR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="map-link"
+            aria-label="View venue location on Google Maps"
+          >
+            <img
+              src="https://via.placeholder.com/560x260/8B1A1A/F5F0E8?text=View+on+Google+Maps+→"
+              alt="Venue location map — click to open Google Maps"
+              class="map-img"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="venue-details">
+            <div class="venue-item">
+              <span class="venue-icon">🚗</span>
+              <p>Valet parking available. Self-park within 2 blocks.</p>
+            </div>
+            <div class="venue-item">
+              <span class="venue-icon">🚌</span>
+              <p>Public transit accessible — Bus lines 15 & 51 stop nearby.</p>
+            </div>
+            <div class="venue-item">
+              <span class="venue-icon">♿</span>
+              <p>Fully accessible venue with ramp entry and reserved seating.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p>
+      <strong>Powell's Corner Bookstore</strong> &nbsp;·&nbsp;
+      1847 NW 23rd Ave, Portland, OR &nbsp;·&nbsp;
+      (503) 555-0142 &nbsp;·&nbsp;
+      events@powellscorner.com
+    </p>
+    <p class="footer-copy">© 2025 Powell's Corner. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
