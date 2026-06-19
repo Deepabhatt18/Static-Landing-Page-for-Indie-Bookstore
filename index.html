@@ -3,196 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>An Evening With Words — Powell's Corner Bookstore</title>
+  <title>The Literary Nexus — Signature Literary Series</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body></body>
-  <nav class="navbar">
-    <a href="#" class="logo">Powell's Corner</a>
-    <span class="tagline">Portland's Independent Bookstore Since 1978</span>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#" class="logo">The Literary Nexus</a>
+    <span class="tagline">Portland's Premier Literary Institution</span>
   </nav>
   <header class="hero" id="home">
-    <div class="hero-container">
-      <p class="hero-heading">One Night Only · July 19, 2025</p>
-      <h1>An Evening<br/>With <em>Words</em></h1>
-      <p class="hero-subtitle">Portland's most intimate author reading series returns —two voices, one unforgettable night </p>
-      <div class="countdown" id="countdown" aria-live="polite">
-        <div class="countdown-unit">
-          <span class="cd-num" id="cd-days">00</span>
-          <span class="cd-label">Days</span>
-        </div>
-        <span class="cd-sep">:</span>
-        <div class="countdown-unit">
-          <span class="cd-num" id="cd-hours">00</span>
-          <span class="cd-label">Hours</span>
-        </div>
-        <span class="cd-sep">:</span>
-        <div class="countdown-unit">
-          <span class="cd-num" id="cd-mins">00</span>
-          <span class="cd-label">Mins</span>
-        </div>
-        <span class="cd-sep">:</span>
-        <div class="countdown-unit">
-          <span class="cd-num" id="cd-secs">00</span>
-          <span class="cd-label">Secs</span>
+    <div class="hero-inner">
+      <h1 id="hero-title">The Literary Nexus Presents:<br/><em>An Evening of Words</em></h1>
+      <h2 class="hero-subtitle">A Signature Series Engagement</h2>
+      <div class="countdown-wrap">
+        <p class="countdown-label">Event Commences In:</p>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-days">00</span>
+            <span class="cd-label">Days</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-hours">00</span>
+            <span class="cd-label">Hours</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-mins">00</span>
+            <span class="cd-label">Mins</span>
+          </div>
         </div>
       </div>
-      <button class="btn-primary" id="btn" aria-label="Reserve your seat at the event">
-        Reserve Your Seat
+      <button class="btn-primary" id="cta-btn" aria-label="Secure your exclusive engagement slot">
+        Secure Your Exclusive Engagement Slot
       </button>
 
-      <div class="hero-details">
-        <span>Powell's Corner Bookstore</span>
-        <span>7:00 PM – 9:30 PM</span>
-        <span>Free Entry</span>
-      </div>
     </div>
   </header>
 
   <main>
-    <div class="section-header">
-      <h2>Featured Authors</h2>
-      <p>Four extraordinary voices sharing stories that linger long after the last page.</p>
-    </div>
-
-    <section class="authors-section" aria-label="Featured Authors">
-      <div class="authors-grid">
-
-        <article class="author-card">
-          <div class="author-photo-wrap">
-            <img class="author-photo" src="./assets/images/maya chen.jpg" alt="Portrait of Maya Chen" loading="lazy" />
-          </div>
-          <p class="author-tag">Fiction · 7:10 PM</p>
-          <h3>Maya Chen</h3>
-          <p class="author-book">"The Weight of Forgotten Seasons" (2024)</p>
-          <p class="author-bio-short">
-            Maya Chen's debut novel has been called "a lantern held up to the fog of grief."
-            A former librarian from Portland, she writes about immigrant families, memory,
-            and the quiet courage it takes to begin again.
-          </p>
-          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-1">
-            Read More ▾
-          </button>
-          <p class="author-bio-full" id="bio-1" hidden>
-            Winner of the Pacific Northwest Book Award, Maya will read from her bestselling
-            debut and answer audience questions. Her work has been translated into 14 languages
-            and praised by The New York Times as "essential reading for our times."
-          </p>
-        </article>
-
-        <article class="author-card">
-          <div class="author-photo-wrap">
-            <img class="author-photo" src="./assets/images/james okafor.jpg" alt="Portrait of James Okafor" loading="lazy" />
-          </div>
-          <p class="author-tag">Poetry & Essays · 8:15 PM</p>
-          <h3>James Okafor</h3>
-          <p class="author-book">"Letters to a City I Never Left" (2023)</p>
-          <p class="author-bio-short">
-            James Okafor writes with the precise tenderness of someone who has learned
-            to love a place by almost losing it. His essays on Black urban life in America
-            have appeared in The Atlantic and Orion Magazine.
-          </p>
-          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-2">
-            Read More ▾
-          </button>
-          <p class="author-bio-full" id="bio-2" hidden>
-            His reading will include unpublished poems from his forthcoming collection
-            due in fall 2025. James has been awarded the Oregon Book Award and is a
-            two-time finalist for the National Book Critics Circle Award.
-          </p>
-        </article>
-
-        <article class="author-card">
-          <div class="author-photo-wrap">
-            <img class="author-photo" src="./assets/images/jane austen 1.jpg" alt="Portrait of Jane Austen" loading="lazy" />
-          </div>
-          <p class="author-tag">Classic Romance · 8:20 PM</p>
-          <h3>Jane Austen</h3>
-          <p class="author-book">"Pride and Prejudice" (1813)</p>
-          <p class="author-bio-short">
-            Renowned for her witty portrayal of 19th-century English society, Jane Austen's
-            novels remain as sharp and relevant as ever. Her keen observations on class,
-            marriage, and morality made her one of the most beloved writers in the English language.
-          </p>
-          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-3">
-            Read More ▾
-          </button>
-          <p class="author-bio-full" id="bio-3" hidden>
-            A special dramatic reading of Pride and Prejudice will open this session,
-            performed by members of the Portland Literary Theatre. This tribute evening
-            celebrates Austen's enduring legacy and her revolutionary voice in fiction.
-          </p>
-        </article>
-
-        <article class="author-card">
-          <div class="author-photo-wrap">
-            <img class="author-photo" src="./assets/images/pauko coelho.jpg" alt="Portrait of Paulo Coelho" loading="lazy" />
-          </div>
-          <p class="author-tag">Inspirational Fiction · 9:00 PM</p>
-          <h3>Paulo Coelho</h3>
-          <p class="author-book">"The Alchemist" (1988)</p>
-          <p class="author-bio-short">
-            Author of The Alchemist — one of the best-selling books in history — Coelho
-            writes deeply spiritual and motivational stories about life, destiny, and purpose.
-          </p>
-          <button class="btn-bio-toggle" aria-expanded="false" aria-controls="bio-4">
-            Read More ▾
-          </button>
-          <p class="author-bio-full" id="bio-4" hidden>
-            His closing reading will be followed by a book-signing session for the first
-            30 attendees. Coelho's works have been translated into 88 languages and sold
-            over 320 million copies worldwide, making him one of the most widely read
-            authors of all time.
-          </p>
-        </article>
-
+    <section class="authors-section" id="authors" aria-label="Featured Literary Personalities">
+      <div class="section-header">
+        <h2>Featured Literary Personalities</h2>
+        <p>Distinguished voices curated for an unforgettable evening of literary excellence.</p>
+      </div>
+      <div class="authors-grid" id="authors-grid">
+        <div class="loading-state" id="loading-authors" aria-live="polite">
+          <p>Loading authors...</p>
+        </div>
       </div>
     </section>
-    <section class="schedule-section" aria-label="Event Schedule">
+    <section class="schedule-section" aria-label="Engagement Schedule">
       <div class="section-header">
-        <h2>Engagement Schedule</h2>
-        <p>A carefully curated evening from start to finish.</p>
+        <h2>Engagement Schedule &amp; Key Logistics</h2>
+        <p>A meticulously curated evening from arrival to farewell.</p>
       </div>
       <ul class="schedule-list" role="list">
         <li class="schedule-item">
           <span class="schedule-time">7:00 PM</span>
-          <span class="schedule-desc">Doors Open & Welcome Reception</span>
+          <span class="schedule-desc">Doors Open &amp; Welcome Reception</span>
         </li>
         <li class="schedule-item">
-          <span class="schedule-time">7:10 PM</span>
-          <span class="schedule-desc">Maya Chen — Fiction Reading</span>
+          <span class="schedule-time">7:30 PM</span>
+          <span class="schedule-desc">Author Reading &amp; Discussion</span>
         </li>
         <li class="schedule-item">
-          <span class="schedule-time">7:50 PM</span>
-          <span class="schedule-desc">George R.R. Martin — Q&A Session</span>
-        </li>
-        <li class="schedule-item">
-          <span class="schedule-time">8:20 PM</span>
-          <span class="schedule-desc">Jane Austen Tribute — Dramatic Reading</span>
+          <span class="schedule-time">8:30 PM</span>
+          <span class="schedule-desc">Q&amp;A Session with Featured Authors</span>
         </li>
         <li class="schedule-item">
           <span class="schedule-time">9:00 PM</span>
-          <span class="schedule-desc">Paulo Coelho — Closing Reading & Book Signing</span>
+          <span class="schedule-desc">Book Signing &amp; Networking</span>
         </li>
         <li class="schedule-item">
           <span class="schedule-time">9:30 PM</span>
-          <span class="schedule-desc">Networking & Refreshments</span>
+          <span class="schedule-desc">Closing Remarks &amp; Refreshments</span>
         </li>
       </ul>
     </section>
-    <section class="rsvp-section" id="rsvp-section" aria-label="RSVP and Event Details">
-
+    <section class="rsvp-section" id="rsvp-section" aria-label="Registration and Logistics">
       <div class="rsvp-grid">
         <div class="rsvp-form-wrap">
-          <h2>Reserve Your Seat</h2>
-          <p class="rsvp-sub">Fill in your details and we'll confirm your spot.</p>
-
-          <form id="rsvp-form" method="POST" action="https://httpbin.org/post" novalidate>
+          <h2>Registration &amp; Logistics</h2>
+          <p class="rsvp-sub">Secure your place at Portland's most prestigious literary event.</p>
+          <form
+            id="rsvp-form"
+            method="POST"
+            action="https://httpbin.org/post"
+            novalidate
+          >
             <div class="form-group">
-              <label for="rsvp-name">Full Name <span class="required">*</span></label>
+              <label for="rsvp-name">Full Name <span class="required" aria-label="required">*</span></label>
               <input
                 type="text"
                 id="rsvp-name"
@@ -200,30 +104,35 @@
                 placeholder="Your Full Name"
                 required
                 autocomplete="name"
+                aria-required="true"
               />
               <span class="error-msg" id="name-error" role="alert"></span>
             </div>
 
             <div class="form-group">
-              <label for="rsvp-email">Email Address <span class="required">*</span></label>
+              <label for="rsvp-email">Professional Email <span class="required" aria-label="required">*</span></label>
               <input
                 type="email"
                 id="rsvp-email"
                 name="email"
-                placeholder="your@email.com"
+                placeholder="Your Professional Email"
                 required
                 autocomplete="email"
+                aria-required="true"
               />
               <span class="error-msg" id="email-error" role="alert"></span>
             </div>
 
             <div class="form-group">
-              <label for="rsvp-affiliation">Organization <span class="optional">(Optional)</span></label>
+              <label for="rsvp-affiliation">
+                Organization
+                <span class="optional">(Optional)</span>
+              </label>
               <input
                 type="text"
                 id="rsvp-affiliation"
                 name="affiliation"
-                placeholder="Your Organization / Affiliation"
+                placeholder="Your Organization/Affiliation"
                 autocomplete="organization"
               />
             </div>
@@ -234,35 +143,23 @@
           </form>
         </div>
         <div class="venue-wrap">
-          <h2>Venue & Logistics</h2>
-          <h3 class="venue-name">Powell's Corner Bookstore</h3>
-          <p class="venue-address">1847 NW 23rd Ave, Portland, OR 97210</p>
-          <a
-            href="https://maps.google.com/?q=1847+NW+23rd+Ave+Portland+OR"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="map-link"
-            aria-label="View venue location on Google Maps"
-          >
-            <img
-              src="https://via.placeholder.com/560x260/8B1A1A/F5F0E8?text=View+on+Google+Maps+→"
-              alt="Venue location map — click to open Google Maps"
-              class="map-img"
-              loading="lazy"
-            />
+          <h2>Venue Details</h2>
+          <h3 class="venue-name">Portland Grand Ballroom</h3>
+          <p class="venue-address">1234 SW Broadway, Portland, OR 97201</p>
+          <a href="https://maps.google.com/?q=The+Literary+Nexus+Portland"target="_blank"rel="noopener noreferrer"class="map-link"aria-label="View venue location on Google Maps">
+            <img src="https://via.placeholder.com/600x400/A30000/FDFDFD?text=View+Map+on+Google+Maps+%E2%86%97"alt="Venue Location Map — click to open Google Maps" class="map-img"loading="lazy" />
           </a>
-
           <div class="venue-details">
             <div class="venue-item">
-              <span class="venue-icon">🚗</span>
-              <p>Valet parking available. Self-park within 2 blocks.</p>
+              <span class="venue-icon" aria-hidden="true">🚗</span>
+              <p>Valet parking available. Self-park options within 2 blocks.</p>
             </div>
             <div class="venue-item">
-              <span class="venue-icon">🚌</span>
-              <p>Public transit accessible — Bus lines 15 & 51 stop nearby.</p>
+              <span class="venue-icon" aria-hidden="true">🚌</span>
+              <p>Public transit accessible — MAX Light Rail & Bus lines nearby.</p>
             </div>
             <div class="venue-item">
-              <span class="venue-icon">♿</span>
+              <span class="venue-icon" aria-hidden="true">♿</span>
               <p>Fully accessible venue with ramp entry and reserved seating.</p>
             </div>
           </div>
@@ -272,16 +169,15 @@
     </section>
 
   </main>
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <p>
-      <strong>Powell's Corner Bookstore</strong> &nbsp;·&nbsp;
-      1847 NW 23rd Ave, Portland, OR &nbsp;·&nbsp;
-      (503) 555-0142 &nbsp;·&nbsp;
-      events@powellscorner.com
+      <strong>The Literary Nexus</strong> &nbsp;·&nbsp;
+      Portland Grand Ballroom, 1234 SW Broadway &nbsp;·&nbsp;
+      info@literarynexus.com
     </p>
-    <p class="footer-copy">© 2025 Powell's Corner. All rights reserved.</p>
+    <p class="footer-copy">© 2025 The Literary Nexus. All rights reserved.</p>
   </footer>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/app.js"></script>
 
 </body>
 </html>

@@ -276,7 +276,7 @@ python -m http.server 5500
 
 ## 📱 How to Test on Mobile
 
-### Method 1 — Same WiFi Network (Real Device)
+###  Same WiFi Network (Real Device)
 ```
 1. Start Live Server in VS Code
 2. Open CMD → type: ipconfig
@@ -286,34 +286,6 @@ python -m http.server 5500
 5. Auto-refreshes on every save ✅
 ```
 
-### Method 2 — Chrome DevTools (Simulate)
-```
-1. Open site in Chrome
-2. Press F12
-3. Press Ctrl + Shift + M
-4. Select device from dropdown (iPhone, Samsung etc.)
-```
-
-### Method 3 — ngrok (Any Network)
-```bash
-npm install -g ngrok
-ngrok http 5500
-# Gives public URL → share with anyone
-```
-
----
-
-## 🐛 Known Issues & Fixes Applied
-
-| Issue | Root Cause | Fix Applied |
-|---|---|---|
-| Hero too tall on laptop | `height: 100vh` | Changed to `min-height: 600px` + `padding` |
-| Hero subtitle had border box | `.hero p` applied to all paragraphs | Created separate `.hero-eyebrow` class |
-| Double padding on hero | `padding` defined twice in CSS | Kept only one `padding: 5rem var(--spacing-md)` |
-| Global `img` had wrong padding | `padding: 0 20px` on all images | Reset to `max-width: 100%; height: auto` |
-| Author photos too tall (500px) | Fixed height too large | Reduced to `260px` for better card proportion |
-
----
 
 ## 🚀 Future Improvements
 
